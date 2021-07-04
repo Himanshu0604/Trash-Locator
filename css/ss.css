@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Allan);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+
+/* General styles */
+
+body{
+  font: 400 20px 'Droid Sans', sans-serif;
+  line-height: 1.5em;
+      background-color: #fff;  
+      color: #c0c5ce;
+}
+
+/* Style for header */
+
+header{
+      position: relative;
+      background-color: #1A1C1D;
+}
+header ul.nav{
+    overflow: hidden;
+}
+header ul.nav li{
+    list-style-type: none;
+    position: center;
+      float: left;
+      width: 20%;
+}
+header ul.nav li a{
+    display: block;
+      height: 50px;
+  opacity: 80;
+  font: 400 1.15em 'Allan', serif;
+      line-height: 50px;
+      color: #848e92;
+  text-decoration: none;
+      text-align: center;
+    cursor: default;
+      -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+  
+
+          &:hover{
+    color: #fff;
+      background-color: #222b2f;
+  }
+  }
+
+
+
+
+@media screen and (max-width: 600px){
+    header ul.nav li{
+            float: left;
+            width: 100%;
+    }
+      header ul.nav li a{
+            height: 0;
+    }
+}
+
+/* Style for header with active class name */
+
+header.active ul.nav li a{
+      height: 120px;
+    opacity: 1;
+      line-height: 120px;
+      cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    header.active ul.nav li a{
+            height: 60px;
+            line-height: 60px;
+    border-bottom: 1px solid #222b2f;
+      }
+}
+
+
+
+/* Style for the plus button */
+
+
+
+/* Style for the plus button when header has active classe name */
+
+
+
+/* Other styles */
+
+.loud{
+      text-transform: uppercase;
+}
+section{
+  padding: 3em;
+}
+h1{
+  margin: 1em 0;
+  font-size: 40px;
+  line-height: 1.5em;
+}
+p{
+  margin: 1em 0;
+}
+strong{
+  color: #93969c;
+}
+
+@media screen and (max-width: 600px){
+  section{
+    padding: 1.5em;
+  }
+}
